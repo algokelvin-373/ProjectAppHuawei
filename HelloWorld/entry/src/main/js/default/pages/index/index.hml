@@ -1,5 +1,3 @@
 <div class="container">
-    <text class="title">
-        {{ $t('strings.hello') }} {{ title }}
-    </text>
+    <text class="title">Hello World, Algokelvin</text>
 </div>
