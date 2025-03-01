@@ -13,7 +13,8 @@
     "name": ".MyApplication",
     "mainAbility": "com.algokelvin.hello.MainAbility",
     "deviceType": [
-      "phone"
+      "phone",
+      "tablet"
     ],
     "distro": {
       "deliveryWithInstall": true,
