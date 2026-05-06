@@ -1,3 +1,5 @@
+import router from '@ohos.router';
+
 @Entry
 @Component
 struct Index {
@@ -55,6 +57,24 @@ struct Index {
             .fontColor('#475569')
             .margin({ left: 6 })
         }
+
+        Button('Lihat Detail')
+          .fontSize(16)
+          .backgroundColor('#3B82F6')
+          .borderRadius(12)
+          .padding({ left: 24, right: 24, top: 10, bottom: 10 })
+          .margin({ top: 24 })
+          .onClick(() => {
+            // Pindah ke SecondPage
+            router.pushUrl({
+              url: 'pages/SecondPage',
+              params: {
+                from: 'IndexPage',
+                userName: 'Kelvin Herwanda Tandrio'
+              }
+            });
+          })
+
         .margin({ top: 20 })
 
       }
